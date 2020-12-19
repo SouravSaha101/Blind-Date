@@ -7,7 +7,7 @@ import "./assets/css/bootstrap.css";
 import { firestorePlugin } from 'vuefire'
 
 createApp(App)
-.use(firestorePlugin)
+// .use(firestorePlugin)
   .use(store)
   .use(router)
   .mount("#app");

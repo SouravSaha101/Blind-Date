@@ -36,11 +36,11 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Connect</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item login-display-nav">
               <a
                 class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
                 href="#services"
-                style="margin-top: 8px"
+                style="margin-top: 4px; margin-bottom: 4px;"
                 >Login</a
               >
             </li>
@@ -55,12 +55,24 @@
         <div class="intro-text">
           <div class="intro-lead-in">Love is blind....literally</div>
           <div class="intro-heading text-uppercase">Sign Up to know more</div>
-          <a
-            class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-            href="#services"
-            style="width: 30%"
-            >Sign Up</a
-          >
+
+          <div>
+            <a
+              class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+              data-toggle="modal"
+              href="#portfolioModal2"
+              style="width: 30%;    margin-bottom: 5%;" 
+              >Sign Up</a
+            >
+          </div>
+          <div class="login-display">
+            <a
+              class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger"
+              href="#services"
+              style="width: 30%"
+              >Login</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -114,7 +126,7 @@
 
     <!-- Portfolio Grid -->
     <Portfolio></Portfolio>
-
+    <Signup></Signup>
     <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
@@ -122,28 +134,41 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">The Team</h2>
             <h3 class="section-subheading text-muted">
-              No ones is getting paid and also John Cena works for us but you can't see him
+              No ones is getting paid and also John Cena works for us but you
+              can't see him
             </h3>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="./assets/img/michael-scott.jpg" alt="" />
+              <img
+                class="mx-auto rounded-circle"
+                src="./assets/img/michael-scott.jpg"
+                alt=""
+              />
               <h4>Michael Scott</h4>
-              <p class="text-muted">Regional Manager </p>
+              <p class="text-muted">Regional Manager</p>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="./assets/img/walter-white.jpg" alt="" />
+              <img
+                class="mx-auto rounded-circle"
+                src="./assets/img/walter-white.jpg"
+                alt=""
+              />
               <h4>Walter White</h4>
               <p class="text-muted">UX Designer (Blue is his speciality)</p>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="./assets/img/veep.jpg" alt="" />
+              <img
+                class="mx-auto rounded-circle"
+                src="./assets/img/veep.jpg"
+                alt=""
+              />
               <h4>Selina Meyer</h4>
               <p class="text-muted">President</p>
             </div>
@@ -156,14 +181,19 @@
     <section id="contact">
       <div class="container">
         <div class="row">
-<div class="col-lg-3"></div>
+          <div class="col-lg-3"></div>
           <div class="col-lg-6 text-center">
-            <h2 class="section-heading text-uppercase" style="background-color: #212529;">Connect with Us</h2>
+            <h2
+              class="section-heading text-uppercase"
+              style="background-color: #212529"
+            >
+              Connect with Us
+            </h2>
             <h3 class="section-subheading text-muted">
               All your queries will not be answered
             </h3>
           </div>
-<div class="col-lg-3"></div>
+          <div class="col-lg-3"></div>
         </div>
         <div class="row">
           <div class="col-lg-12">
@@ -241,8 +271,7 @@
           <div class="col-md-4">
             <span class="copyright">Copyright &copy; Sourav Saha</span>
           </div>
-          <div class="col-md-4">
-          </div>
+          <div class="col-md-4"></div>
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
@@ -258,72 +287,18 @@
     </footer>
 
     <!-- Modal 2 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/02-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </template>
 
 <script>
 import Portfolio from "./components/Portfolio";
+import Signup from "./components/Signup";
 
 export default {
   name: "app",
   components: {
     Portfolio,
+    Signup,
   },
   data() {
     return {

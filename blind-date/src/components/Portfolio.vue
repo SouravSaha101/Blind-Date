@@ -10,16 +10,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 col-sm-3 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-          </a>
+        <div class="col-md-3 col-sm-3 col-3  portfolio-item">
+
           <div class="portfolio-caption">
-            <h4>Facebook</h4>
+            
             <img
               class="img-fluid"
               :src="require('../assets/img/facebook-logo.png')"
@@ -27,9 +21,9 @@
             />
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 portfolio-item">
+        <div class="col-md-3 col-sm-3 col-3 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Youtube</h4>
+            
             <img
               class="img-fluid"
               :src="require('../assets/img/youtube-logo.png')"
@@ -37,9 +31,9 @@
             />
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 portfolio-item">
+        <div class="col-md-3 col-sm-3 col-3 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Twitter</h4>
+     
             <img
               class="img-fluid"
               :src="require('../assets/img/twitter-logo.png')"
@@ -48,9 +42,9 @@
            
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 portfolio-item">
+        <div class="col-md-3 col-sm-3 col-3 portfolio-item">
           <div class="portfolio-caption">
-            <h4>Instagram</h4>
+           
             <img
               class="img-fluid"
               :src="require('../assets/img/insta-logo.png')"
