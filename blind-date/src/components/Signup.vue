@@ -117,8 +117,8 @@
 </template>
 
 <script>
-import firebase from "firebase";
-import { db } from "../firebase";
+// import firebase from "firebase";
+// import { db } from "../firebase";
 
 export default {
   data() {
@@ -135,46 +135,46 @@ export default {
     };
   },
   methods: {
-    async signUp() {
-      if (this.signUpPassword !== this.confirmPassword) {
-        alert("Passwords don't match");
-        return;
-      }
+    // async signUp() {
+    //   if (this.signUpPassword !== this.confirmPassword) {
+    //     alert("Passwords don't match");
+    //     return;
+    //   }
 
-      if (
-        !this.signUpData &&
-        !this.signUpData.name &&
-        !this.signUpData.email &&
-        this.signUpPassword &&
-        this.confirmPassword
-      ) {
-        alert("Enter All Fields");
-        return;
-      }
-      try {
-        await firebase
-          .auth()
-          .createUserWithEmailAndPassword(
-            this.signUpData.email,
-            this.signUpPassword
-          );
-        this.signUpData.uid = firebase.auth().currentUser.uid;
-        const documentPath = "login-details/" + this.signUpData.uid.toString();
-        const docRef = db.doc(documentPath);
-        const data = (await docRef.get()).data();
-        if (!data) {
-          docRef.set(this.signUpData);
-        } else {
-          alert("Data Exist");
-        }
-        alert("Created");
-        this.$router.replace({
-            name: "Home",
-          });
-      } catch (error) {
-        alert(error);
-      }
-    },
+    //   if (
+    //     !this.signUpData &&
+    //     !this.signUpData.name &&
+    //     !this.signUpData.email &&
+    //     this.signUpPassword &&
+    //     this.confirmPassword
+    //   ) {
+    //     alert("Enter All Fields");
+    //     return;
+    //   }
+    //   try {
+    //     await firebase
+    //       .auth()
+    //       .createUserWithEmailAndPassword(
+    //         this.signUpData.email,
+    //         this.signUpPassword
+    //       );
+    //     this.signUpData.uid = firebase.auth().currentUser.uid;
+    //     const documentPath = "login-details/" + this.signUpData.uid.toString();
+    //     const docRef = db.doc(documentPath);
+    //     const data = (await docRef.get()).data();
+    //     if (!data) {
+    //       docRef.set(this.signUpData);
+    //     } else {
+    //       alert("Data Exist");
+    //     }
+    //     alert("Created");
+    //     this.$router.replace({
+    //         name: "Home",
+    //       });
+    //   } catch (error) {
+    //     alert(error);
+    //   }
+    // },
   },
 };
 </script>

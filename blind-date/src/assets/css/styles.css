@@ -185,6 +185,9 @@ img::-moz-selection {
     }
 }
 
+.about-image{
+background-image: url(../img/about.jpg) !important;
+}
 header.masthead {
     text-align: center;
     color: #fff;

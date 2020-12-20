@@ -8430,7 +8430,8 @@ button.bg-dark:hover {
 }
 
 .ml-auto,
-.mx-auto {
+.mx-auto ,
+.ml_auto {
     margin-left: auto !important
 }
 
